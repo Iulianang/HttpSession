@@ -52,7 +52,6 @@ public class SesionLogout extends HttpServlet {
 		 HttpSession sesion = request.getSession();
 	        String usu;
 	        usu = request.getParameter("USUARIO");
-	        sesion.getAttribute("contador");
             sesion.setAttribute("contador", 0);
 	        
 	        if(sesion.getAttribute("usuario") == null)
